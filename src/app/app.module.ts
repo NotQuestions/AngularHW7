@@ -5,7 +5,6 @@ import { AppComponent } from './app.component';
 import {HttpClientModule} from '@angular/common/http';
 import {RouterModule, Routes} from '@angular/router';
 import { HomeComponent } from './home/home.component';
-import {UserModule} from './user-module/user.module';
 
 const routes: Routes = [
   {
@@ -13,6 +12,12 @@ const routes: Routes = [
   },
   {
     path: 'all-users', loadChildren: () => import('./user-module/user.module').then(m => m.UserModule),
+  },
+  {
+    path: 'all-posts', loadChildren: () => import('./post-module/post.module').then(m => m.PostModule),
+  },
+  {
+    path: 'all-comments', loadChildren: () => import('./comments-module/comments.module').then(m => m.CommentsModule),
   }
 ];
 

@@ -1,1 +1,8 @@
-<p>all-posts works!</p>
+<a routerLink="">GO HOME PAGE</a>
+<div>____________________________________</div>
+<div *ngFor="let post of posts">
+  <div>ID: {{post.id}}</div>
+  <div>Name: {{post.title}}</div>
+  <div>body:   {{post.body}}</div>
+  <br>
+</div>

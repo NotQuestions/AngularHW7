@@ -1,3 +1,9 @@
-<div>
-  {{users | json}}
+<a routerLink="">GO HOME PAGE</a>
+<div>____________________________________</div>
+<div *ngFor="let user of users">
+  <div>ID: {{user.id}})</div>
+  <div>Name: {{user.name}}</div>
+  <div>Email: {{user.email}}</div>
+  <div>Phone: {{user.phone}}</div>
+  <br>
 </div>
