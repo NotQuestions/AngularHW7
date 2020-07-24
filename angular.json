@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "AngulerHW7"
+    }
+  },
+  "defaultProject": "AngulerHW7",
+  "cli": {
+    "analytics": false
+  }
 }
